@@ -465,6 +465,7 @@ AWS_S3_ENDPOINT_URL = os.environ.get("AWS_S3_ENDPOINT_URL", None)
 AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 AWS_STORAGE_BUCKET_NAME = os.environ.get("AWS_STORAGE_BUCKET_NAME")
 AWS_DEFAULT_ACL = os.environ.get("AWS_DEFAULT_ACL", None)
+AWS_S3_FILE_OVERWRITE = os.environ.get('AWS_S3_FILE_OVERWRITE', False)
 
 # Google Cloud Storage configuration
 GS_PROJECT_ID = os.environ.get("GS_PROJECT_ID")
@@ -655,3 +656,4 @@ PLUGINS = [
 # Whether DraftJS should be used be used instead of HTML
 # True to use DraftJS (JSON based), for the 2.0 dashboard
 USE_JSON_CONTENT = get_bool_from_env("USE_JSON_CONTENT", False)
+
